@@ -1,0 +1,29 @@
+{
+    "name": "nano-emitter",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "tsc -p .",
+        "watch": "tsc -p . -w",
+        "pretest": "tsc -p . --noEmit && tslint -p .",
+        "test": "jest"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/reactway/nano-emitter.git"
+    },
+    "keywords": [],
+    "author": "Martynas Žilinskas <martynas@quatrodev.com> (https://github.com/MartynasZilinskas)",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/reactway/nano-emitter/issues"
+    },
+    "homepage": "https://github.com/reactway/nano-emitter#readme",
+    "dependencies": {
+        "simplr-tslint": "^1.0.0-alpha.14",
+        "tslint": "^5.15.0",
+        "tslint-language-service": "^0.9.9",
+        "typescript": "^3.4.1"
+    }
+}
