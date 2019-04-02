@@ -1,0 +1,60 @@
+{
+    "name": "nano-emitter",
+    "version": "1.0.0",
+    "description": "Small change emitter",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "build": "tsc -p .",
+        "watch": "tsc -p . -w",
+        "pretest": "tsc -p . --noEmit && tslint -p .",
+        "test": "jest"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/reactway/nano-emitter.git"
+    },
+    "keywords": [
+        "emitter"
+    ],
+    "files": [
+        "dist",
+        "**/*.md"
+    ],
+    "author": "Martynas Žilinskas <martynas@quatrodev.com> (https://github.com/MartynasZilinskas)",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/reactway/nano-emitter/issues"
+    },
+    "homepage": "https://github.com/reactway/nano-emitter#readme",
+    "devDependencies": {
+        "@types/jest": "^24.0.11",
+        "istanbul-azure-reporter": "^0.1.4",
+        "jest": "^24.6.0",
+        "jest-junit": "^6.3.0",
+        "simplr-tslint": "^1.0.0-alpha.14",
+        "ts-jest": "^24.0.1",
+        "tslint": "^5.15.0",
+        "tslint-language-service": "^0.9.9",
+        "typescript": "^3.4.1"
+    },
+    "jest": {
+        "verbose": true,
+        "preset": "ts-jest",
+        "reporters": [
+            "default",
+            "jest-junit"
+        ],
+        "collectCoverage": true,
+        "testRegex": "/__tests__/.*\\.(test|spec).(ts|tsx)$",
+        "collectCoverageFrom": [
+            "src/**/*.{ts,tsx}",
+            "!src/**/__tests__/*",
+            "!src/index.ts"
+        ],
+        "coverageReporters": [
+            "cobertura",
+            "istanbul-azure-reporter"
+        ]
+    }
+}
