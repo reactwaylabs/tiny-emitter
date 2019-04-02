@@ -1,5 +1,5 @@
 {
-    "name": "@reactway/nano-emitter",
+    "name": "@reactway/tiny-emitter",
     "version": "1.0.0",
     "description": "Small change emitter",
     "main": "dist/index.js",
@@ -12,7 +12,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/reactway/nano-emitter.git"
+        "url": "git+https://github.com/reactway/tiny-emitter.git"
     },
     "keywords": [
         "emitter"
@@ -24,9 +24,9 @@
     "author": "Martynas Žilinskas <martynas@quatrodev.com> (https://github.com/MartynasZilinskas)",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/reactway/nano-emitter/issues"
+        "url": "https://github.com/reactway/tiny-emitter/issues"
     },
-    "homepage": "https://github.com/reactway/nano-emitter#readme",
+    "homepage": "https://github.com/reactway/tiny-emitter#readme",
     "devDependencies": {
         "@types/jest": "^24.0.11",
         "istanbul-azure-reporter": "^0.1.4",

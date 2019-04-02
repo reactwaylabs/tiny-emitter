@@ -1,1 +1,1 @@
-export * from "./nano-emitter";
+export * from "./tiny-emitter";

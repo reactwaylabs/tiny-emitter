@@ -1,17 +1,17 @@
-[![NPM version](https://img.shields.io/npm/v/@reactway/nano-emitter.svg?logo=npm)](https://www.npmjs.com/package/@reactway/nano-emitter)
+[![NPM version](https://img.shields.io/npm/v/@reactway/tiny-emitter.svg?logo=npm)](https://www.npmjs.com/package/@reactway/tiny-emitter)
 [![Build Status](https://img.shields.io/azure-devops/build/reactway/reactway/6/master.svg?logo=azuredevops)](https://dev.azure.com/reactway/ReactWay/_build?definitionId=6)
 [![Code coverage](https://img.shields.io/azure-devops/coverage/reactway/reactway/6/master.svg)](https://dev.azure.com/reactway/ReactWay/_build?definitionId=6)
-[![Dependencies](https://img.shields.io/david/reactway/nano-emitter.svg)](https://david-dm.org/reactway/nano-emitter)
-[![Dev dependencies](https://img.shields.io/david/dev/reactway/nano-emitter.svg)](https://david-dm.org/reactway/nano-emitter?type=dev)
+[![Dependencies](https://img.shields.io/david/reactway/tiny-emitter.svg)](https://david-dm.org/reactway/tiny-emitter)
+[![Dev dependencies](https://img.shields.io/david/dev/reactway/tiny-emitter.svg)](https://david-dm.org/reactway/tiny-emitter?type=dev)
 
-# @reactway/nano-emitter
+# @reactway/tiny-emitter
 
 Small library to handle change emits.
 
 ## Get started
 
 ```sh
-$ npm install nano-emitter
+$ npm install tiny-emitter
 ```
 
 ## Example
@@ -20,7 +20,7 @@ $ npm install nano-emitter
 type CounterHandler = (count: number) => void;
 const handler: CounterHandler = count => console.log("Counter:", count);
 
-const counterEmitter = new NanoEmitter<CounterHandler>();
+const counterEmitter = new TinyEmitter<CounterHandler>();
 
 const removeListener = counterEmitter.addListener(handler);
 
