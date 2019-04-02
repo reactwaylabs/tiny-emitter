@@ -1,7 +1,7 @@
 // tslint:disable-next-line:no-any
 export type Callback = (...args: any[]) => void;
 
-export class NanoEmitter<THandler extends Callback> {
+export class TinyEmitter<THandler extends Callback> {
     private registry?: Callback | Callback[];
 
     public addListener(handler: THandler): () => void {
