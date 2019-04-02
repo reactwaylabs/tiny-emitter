@@ -11,7 +11,7 @@ Small library to handle change emits.
 ## Get started
 
 ```sh
-$ npm install tiny-emitter
+$ npm install @reactway/tiny-emitter
 ```
 
 ## Example
