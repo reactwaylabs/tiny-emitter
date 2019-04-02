@@ -2,7 +2,8 @@
     "name": "nano-emitter",
     "version": "1.0.0",
     "description": "Small change emitter",
-    "main": "index.js",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
     "scripts": {
         "build": "tsc -p .",
         "watch": "tsc -p . -w",
@@ -15,6 +16,10 @@
     },
     "keywords": [
         "emitter"
+    ],
+    "files": [
+        "dist",
+        "**/*.md"
     ],
     "author": "Martynas Žilinskas <martynas@quatrodev.com> (https://github.com/MartynasZilinskas)",
     "license": "MIT",
