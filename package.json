@@ -1,6 +1,6 @@
 {
     "name": "@reactway/tiny-emitter",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Small change emitter",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
