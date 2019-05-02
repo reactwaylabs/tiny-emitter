@@ -1,6 +1,6 @@
 {
     "name": "@reactway/tiny-emitter",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Small change emitter",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
@@ -37,6 +37,9 @@
         "tslint": "^5.15.0",
         "tslint-language-service": "^0.9.9",
         "typescript": "^3.4.1"
+    },
+    "dependencies": {
+        "tslib": "^1.9.3"
     },
     "jest": {
         "verbose": true,
