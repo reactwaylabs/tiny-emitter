@@ -1,0 +1,20 @@
+name: Test
+
+on: pull_request
+
+jobs:
+  job1:
+    name: "Test"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '10.x'
+          registry-url: 'https://npm.pkg.github.com'
+      - run: npm install
+      - run: npm test
+      # - uses: codecov/codecov-action@v1.0.2
+      #   with:
+      #     token: ${{secrets.CODECOV_TOKEN}}
+      #     file: ./coverage/cobertura-coverage.xml
