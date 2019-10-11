@@ -39,7 +39,7 @@ it("emit when one handlers is added", () => {
 
     emitter.addListener(handler1);
 
-    emitter.emit(true);
+    emitter.emit();
 
     expect(handler1.mock.calls.length).toBe(1);
 });
@@ -54,7 +54,7 @@ it("emit when multiple handlers added", () => {
     emitter.addListener(handler2);
     emitter.addListener(handler3);
 
-    emitter.emit(true);
+    emitter.emit();
 
     expect(handler1.mock.calls.length).toBe(1);
     expect(handler2.mock.calls.length).toBe(1);

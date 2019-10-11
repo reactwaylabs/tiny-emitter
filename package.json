@@ -1,13 +1,13 @@
 {
     "name": "@reactway/tiny-emitter",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Small change emitter",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "scripts": {
         "build": "tsc -p .",
         "watch": "tsc -p . -w",
-        "pretest": "tsc -p . --noEmit && tslint -p .",
+        "pretest": "tsc -p . --noEmit && eslint \"src/**/*.ts*\"",
         "test": "jest"
     },
     "repository": {
@@ -15,7 +15,8 @@
         "url": "git+https://github.com/reactway/tiny-emitter.git"
     },
     "keywords": [
-        "emitter"
+        "emitter",
+        "tiny-emitter"
     ],
     "files": [
         "dist",
@@ -28,18 +29,16 @@
     },
     "homepage": "https://github.com/reactway/tiny-emitter#readme",
     "devDependencies": {
-        "@types/jest": "^24.0.11",
-        "istanbul-azure-reporter": "^0.1.4",
-        "jest": "^24.6.0",
-        "jest-junit": "^6.3.0",
-        "simplr-tslint": "^1.0.0-alpha.14",
-        "ts-jest": "^24.0.1",
-        "tslint": "^5.15.0",
-        "tslint-language-service": "^0.9.9",
-        "typescript": "^3.4.1"
+        "@reactway/eslint-config": "^1.0.0-alpha",
+        "@types/jest": "^24.0.18",
+        "eslint": "^6.5.1",
+        "jest": "^24.9.0",
+        "jest-junit": "^8.0.0",
+        "ts-jest": "^24.1.0",
+        "typescript": "^3.6.4"
     },
     "dependencies": {
-        "tslib": "^1.9.3"
+        "tslib": "^1.10.0"
     },
     "jest": {
         "verbose": true,
@@ -56,8 +55,7 @@
             "!src/index.ts"
         ],
         "coverageReporters": [
-            "cobertura",
-            "istanbul-azure-reporter"
+            "cobertura"
         ]
     }
 }

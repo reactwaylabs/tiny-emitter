@@ -12,13 +12,7 @@
         "noEmitHelpers": true,
         "importHelpers": true,
         "esModuleInterop": true,
-        "plugins": [
-            {
-                "name": "tslint-language-service",
-                "alwaysShowRuleFailuresAsWarnings": true,
-                "ignoreDefinitionFiles": true
-            }
-        ]
+        "skipLibCheck": true
     },
     "exclude": ["**/__tests__", "dist"]
 }
