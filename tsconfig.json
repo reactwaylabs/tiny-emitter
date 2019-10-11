@@ -11,14 +11,7 @@
         "forceConsistentCasingInFileNames": true,
         "noEmitHelpers": true,
         "importHelpers": true,
-        "esModuleInterop": true,
-        "plugins": [
-            {
-                "name": "tslint-language-service",
-                "alwaysShowRuleFailuresAsWarnings": true,
-                "ignoreDefinitionFiles": true
-            }
-        ]
+        "esModuleInterop": true
     },
     "exclude": ["**/__tests__", "dist"]
 }
