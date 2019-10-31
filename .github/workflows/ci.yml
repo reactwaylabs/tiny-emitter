@@ -1,0 +1,37 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - dev
+      - master
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [12.x]
+
+    steps:
+      - uses: actions/checkout@v1
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: npm install
+        run: npm install
+      - name: npm test
+        run: npm test
+      - name: npm run build
+        run: |
+          PACKAGE=$(npm pack);
+          echo $PACKAGE;
+
+          echo "::set-env name=PACKAGE::$PACKAGE"
+      - uses: actions/upload-artifact@v1
+        with:
+          name: package
+          path: ${{ env.PACKAGE }}
